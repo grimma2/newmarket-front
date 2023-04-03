@@ -4,6 +4,8 @@ import {defaultAxios} from "@/api/apiData";
 
 export const productsModule = {
     state: () => ({
+        selectedProducts: [],
+        filterProducts: {},
         targetObjects: [],
         targetProducts: [],
         targetCategories: [],
@@ -62,14 +64,14 @@ export const productsModule = {
         productDataToQuery (state) {
           let company_set = '';
           let category_set = '';
-          for (let i = 0; i < state.companies.length; i++) {
-              if (state.companies[i].checkValue) {
-                  company_set = company_set + state.companies[i].id + ','
+          for (let i = 0; i < state.filterProducts.companies.length; i++) {
+              if (state.filterProducts.companies[i].checkValue) {
+                  company_set = company_set + state.filterProducts.companies[i].id + ','
               }
           }
-          for (let i = 0; i < state.categories.length; i++) {
-              if (state.categories[i].checkValue) {
-                  category_set = category_set + state.companies[i].id + ','
+          for (let i = 0; i < state.filterProducts.categories.length; i++) {
+              if (state.filterProducts.categories[i].checkValue) {
+                  category_set = category_set + state.filterProducts.categories[i].id + ','
               }
           }
           company_set = company_set.substring(0, company_set.length - 1)
@@ -77,8 +79,8 @@ export const productsModule = {
           let query = {
             companies: company_set,
             categories: category_set,
-            from: state.fromInput,
-            to: state.toInput
+            from: state.filterProducts.fromInput,
+            to: state.filterProducts.toInput
           }
           for (let key of Object.keys(query)) {
             if (!query[key]) {
@@ -161,24 +163,21 @@ export const productsModule = {
         setTargetCategories (state, targetCategories) {
             state.targetCategories = targetCategories
         },
+        setFilterProducts (state, filterProducts) {
+            state.filterProducts = filterProducts
+        },
+        setSelectedProducts (state, selectedProducts) {
+            state.selectedProducts = selectedProducts
+        }
     },
     actions: {
-        // async sendProductQuery ({commit}) {
-        //     let response = await fetch(
-        //       apiUrl, {
-        //           method: 'GET',
-        //           headers: defaultHeaders,
-        //           body: JSON.stringify({})
-        //       }
-        //     )
-        //     let data = await response.json()
-        //
-        //     commit('setProducts', data.products)
-        //     commit('setCategories', data.response.productBar.categories)
-        //     commit('setCompanies', data.response.productBar.companies)
-        //     commit('setFromInput', data.response.productBar.from)
-        //     commit('setToInput', data.response.productBar.to)
-        // },
+        async sendProductQuery ({commit, getters}) {
+            let response = await defaultAxios.post(
+              urls.products.get_selected_products,
+              getters.productDataToQuery()
+            )
+            commit('setSelectedProducts', response.selectedProducts)
+        },
         async requestTargetObjects ({commit}) {
             const response = await defaultAxios.post(
                 urls.products.get_target_products,

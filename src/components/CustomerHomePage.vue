@@ -2,28 +2,20 @@
   <div class="customer-home-page">
     <div class="objects-wrapper">
       <div v-for="objects in $store.getters['products/getJoinObjects']" :key="objects">
-        <div class="products">
-          <div v-for="product in objects.products" :key="product.id">
-            <span>{{ product.name }}</span>
-            <img :src="product.photo">
-            <span>{{ product.rating }}</span>
-            <span>{{ product.price }}</span>
-          </div>
-        </div>
-        <div class="categories">
-          <div v-for="category in objects.categories" :key="category.id">
-            <img :src="category.photo">
-            <span>{{ category.name }}</span>
-          </div>
-        </div>
+        <product-list :products="objects.products"/>
+        <category-list :categories="objects.categories"/>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import ProductList from "@/components/ProductList.vue";
+import CategoryList from "@/components/CategoryList.vue";
+
 export default {
   name: "CustomerHomePage",
+  components: {CategoryList, ProductList},
   beforeMount() {
     let productsModule = this.$store.state.products
     if (!(productsModule.targetProducts.length && productsModule.targetCategories.length)) {

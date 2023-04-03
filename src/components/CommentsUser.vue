@@ -7,7 +7,7 @@
             @updateComment="requestUpdateComment"
         />
       </div>
-      <div v-else>
+      <div>
         <create-comment-form
             @createComment="requestCreateComment"
         />
