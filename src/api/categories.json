@@ -1,3 +1,149 @@
-{
-
-}
+[
+  {
+    "name": "Электроника",
+    "level": 1,
+    "sub-categories": [
+      {
+        "name": "Аудиотехника",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Оргтехника",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Электронные музыкальные инструменты",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Смартфоны и гаджеты",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Ноутбуки, планшеты",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Комплектующие для ПК",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Цифровые товары",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Фото и видеокамеры",
+        "level": 2,
+        "sub-categories": []
+      }
+    ]
+  },
+  {
+    "name": "Одежды обувь",
+    "level": 1,
+    "sub-categories": [
+      {
+        "name": "Женщинам",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Мужчинам",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Детям",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Уход за одеждой",
+        "level": 2,
+        "sub-categories": []
+      }
+    ]
+  },
+  {
+    "name": "Дом",
+    "level": 1,
+    "sub-categories": [
+      {
+        "name": "Мебель",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Интерьер",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Текстиль",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Посуда",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Техника для дома",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Техника для кухни",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Техника для красоты",
+        "level": 2,
+        "sub-categories": []
+      }
+    ]
+  },
+  {
+    "name": "Супермаркет",
+    "level": 1,
+    "sub-categories": [
+      {
+        "name": "Вода, соки, напитки",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Кондитерские изделия",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Чай, кофе, какао",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Макароны, крупы",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Снеки",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": ""
+      }
+    ]
+  }
+]
