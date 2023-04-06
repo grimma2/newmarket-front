@@ -142,7 +142,198 @@
         "sub-categories": []
       },
       {
-        "name": ""
+        "name": "Соусы, кетчупы",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Детские соусы, варенье, мед",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Все для выпечки",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Орехи, семена, сухофрукты",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Готовые блюда",
+        "level": 2,
+        "sub-categories": []
+      }
+    ]
+  },
+  {
+    "name": "Красота и здоровье",
+    "level": 1,
+    "sub-categories": [
+      {
+        "name": "Макияж",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Парфюмерия",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Уход за лицом",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Уход за телом",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Мужская косметика",
+        "level": 2,
+        "sub-categories": []
+      }
+    ]
+  },
+  {
+    "name": "Детские товары",
+    "level": 1,
+    "sub-categories": [
+      {
+        "name": "Игрушки и игры",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Детский спорт",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Хобби и творчество",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Для школы",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Коляски и автокресла",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Развитие и обучение",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Детская комната",
+        "level": 2,
+        "sub-categories": []
+      }
+    ]
+  },
+  {
+    "name": "Спорт и отдых",
+    "level": 1,
+    "sub-categories": [
+      {
+        "name": "Спортивное питание",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Зимний спорт",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Виды спорта",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Беги и спортивная ходьба",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Тренажёры",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Спортивные игры",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Велоспорт",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Скейты, ролики, самокаты, BMX",
+        "level": 2,
+        "sub-categories": []
+      }
+    ]
+  },
+  {
+    "name": "Дача и сад",
+    "level": 1,
+    "sub-categories": [
+      {
+        "name": "Садовая техника",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Семена, саженцы, газоны",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Уход за растениями",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Садовые инструменты",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Аксессуары для полива",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Пикник, барбекю, гриль",
+        "level": 2,
+        "sub-categories": []
+      },
+      {
+        "name": "Бассейны и аксессуары",
+        "level": 2,
+        "sub-categories": []
+      }
+    ]
+  },
+  {
+    "name": "Аптека",
+    "level": 1,
+    "sub-categories": [
+      {
+        "name": "Сезон простуд"
+
       }
     ]
   }
